@@ -2,7 +2,10 @@
   "name": "passport-workshop",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve my-travels -o --port=9876",
+    "test": "jest"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.2.0",
