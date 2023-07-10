@@ -18,6 +18,8 @@ import { UserTableComponent } from './user-table/user-table.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { GenericTableComponent } from './generic-table/generic-table.component';
+import { MessageComponent } from './home/message/message.component';
+import { MessageButtonComponent } from './home/message/message-button/message-button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { GenericTableComponent } from './generic-table/generic-table.component';
     ProfileComponent,
     CountriesTableComponent,
     UserTableComponent,
-    GenericTableComponent
+    GenericTableComponent,
+    MessageComponent,
+    MessageButtonComponent,
   ],
   imports: [
     AgGridModule,

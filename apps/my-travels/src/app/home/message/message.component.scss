@@ -1,0 +1,15 @@
+:host{
+  p{
+    background-color: rgba(0, 0, 0, 0.53);
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  position: relative;
+  passport-workshop-message-button{
+    z-index: 12;
+    position: absolute;
+    top: 90%;
+    right: 10px;
+  }
+}
