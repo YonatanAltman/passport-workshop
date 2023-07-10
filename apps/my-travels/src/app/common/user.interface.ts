@@ -8,4 +8,5 @@ export interface User {
   isActive: boolean;
   createdAt: Date;
   updatedAt?: Date;
+  imageUrlProfile?: string
 }

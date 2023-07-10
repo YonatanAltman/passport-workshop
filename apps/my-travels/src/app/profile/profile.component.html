@@ -1,0 +1,38 @@
+<div class="img">
+
+  <img [src]="user.imageUrlProfile">
+</div>
+<form [formGroup]="userForm">
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" [readonly]="readOnly"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" [readonly]="readOnly"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="firstName" [readonly]="readOnly"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="lastName" [readonly]="readOnly"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age" [readonly]="readOnly"/>
+  </mat-form-field>
+
+</form>
+<button
+  mat-raised-button
+  color="primary"
+  (click)="toggleReadOnly()"
+>
+  {{ readOnly ? 'Edit' : 'Save' }}
+</button>
