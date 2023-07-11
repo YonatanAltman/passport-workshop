@@ -12,4 +12,7 @@ export const appRoutes: Route[] = [
   {path: 'profile', component: ProfileComponent},
   {path: 'users', component: UserTableComponent},
   {path: 'countries', component: CountriesTableComponent},
+  {path: 'table', loadComponent:()=>import(
+      /* webpackChunkName: "ui-generic-tabe*/
+    '@passport-workshop/ui-generic-tabel').then(a => a.GenericTableComponent)},
 ];

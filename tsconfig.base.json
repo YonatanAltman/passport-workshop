@@ -15,9 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@passport-workshop/data": ["libs/data/src/index.ts"],
       "@passport-workshop/data-ca": ["libs/data-ca/src/index.ts"],
       "@passport-workshop/home": ["libs/home/src/index.ts"],
       "@passport-workshop/some": ["libs/some/src/index.ts"],
+      "@passport-workshop/ui-generic-tabel": [
+        "libs/ui-generic-tabel/src/index.ts"
+      ],
       "@passport-workshop/utils": ["libs/utils/src/index.ts"]
     }
   },
