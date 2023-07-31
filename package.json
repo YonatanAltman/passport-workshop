@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve my-travels -o --port=9876",
+    "start:responsive": "nx serve responsive-app -o --port=9880",
     "test": "jest",
     "build": "nx build my-travels",
     "build:some": "nx build some"

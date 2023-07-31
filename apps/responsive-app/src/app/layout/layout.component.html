@@ -1,0 +1,26 @@
+<div class="header">
+
+    <div class="logo">
+      LOGO
+    </div>
+
+    <div class="navigations">
+      <ng-container *ngFor="let link of navigations">
+        <a [routerLink]="'/'+link.link">{{link.label}}</a>
+      </ng-container>
+      <ng-container *ngFor="let link of navigations">
+        <a [routerLink]="link.link">{{link.label}}</a>
+      </ng-container>
+<ng-container *ngFor="let link of navigations">
+        <a [routerLink]="link.link">{{link.label}}</a>
+      </ng-container>
+
+    </div>
+
+  <div class="user">{{user.fullname}}</div>
+
+</div>
+<div class="sidebar"></div>
+<div class="body">
+  <ng-content></ng-content>
+</div>

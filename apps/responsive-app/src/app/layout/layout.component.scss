@@ -1,0 +1,34 @@
+$header-height: 60px;
+$sidebar-height: calc(100vh - #{$header-height});
+$sidebar-width: 60px;
+$body-width: calc(100vw - #{$sidebar-width});
+
+:host {
+  display: grid;
+  grid-template:
+    "header header"
+    "sidebar body";
+
+
+  .header {
+    grid-area: header;
+    background: darkblue;
+    height: $header-height;
+
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+
+  .sidebar {
+    width: $sidebar-width;
+    height: $sidebar-height;
+    background: black;
+  }
+
+  .body {
+    margin: 10px;
+    width: $body-width;
+    height: $sidebar-height;
+  }
+}
