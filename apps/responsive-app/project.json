@@ -20,7 +20,10 @@
           "apps/responsive-app/src/assets"
         ],
         "styles": ["apps/responsive-app/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/responsive-app/src/assets/styles"]
+        }
       },
       "configurations": {
         "production": {

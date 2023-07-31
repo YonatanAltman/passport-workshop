@@ -4,6 +4,7 @@ $sidebar-width: 60px;
 $body-width: calc(100vw - #{$sidebar-width});
 
 :host {
+  --header-height:80px;
   display: grid;
   grid-template:
     "header header"
@@ -13,7 +14,7 @@ $body-width: calc(100vw - #{$sidebar-width});
   .header {
     grid-area: header;
     background: darkblue;
-    height: $header-height;
+    height: var(--header-height);
 
     color: white;
     display: grid;
@@ -27,7 +28,6 @@ $body-width: calc(100vw - #{$sidebar-width});
   }
 
   .body {
-    margin: 10px;
     width: $body-width;
     height: $sidebar-height;
   }

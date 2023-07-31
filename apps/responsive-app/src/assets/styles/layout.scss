@@ -1,0 +1,40 @@
+@import "function";
+
+:root {
+  --primery-color: darkblue;
+  --secondary-color: orange;
+  --error-color: red;
+
+  --header-height: 60px;
+
+
+  .body.dark-mode {
+    --primery-color: darkblue;
+    --secondary-color: orange;
+    --error-color: red;
+  }
+}
+
+
+$arr: 1 2 3 4 5 6 7 8 9 10;
+
+@each $size in $arr {
+  .col-#{$size} {
+    display: grid;
+    grid-template-columns: repeat($size, 1fr);
+  }
+  .mrg-#{$size} {
+    margin: times8($size);
+  }
+  .mrg-t-#{$size} {
+    margin-top: times8($size);
+  }
+  .mrg-b-#{$size} {
+    margin-bottom: times8($size);
+  }
+  .mrg-x-#{$size} {
+    margin-left: times8($size);
+    margin-right: times8($size);
+  }
+
+}

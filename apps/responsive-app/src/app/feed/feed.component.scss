@@ -1,22 +1,26 @@
+@import "mixin";
+@import "function";
+
 :host {
   .grid-wrapper {
     display: grid;
     //grid-template-columns: repeat(3,150px);
     //grid-template-columns: repeat(3,1fr);
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) );
     place-content: space-around;
     //background: red;
 
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: times8();
+    column-gap: times8();
 
   }
+
   .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
     background: red;
 
-    row-gap: 10px;
+    row-gap: times8();
     column-gap: 10px;
 
   }
@@ -27,8 +31,6 @@
     background: #e9dada;
     color: darkblue;
     font-weight: bold;
-
-    display: grid;
-    place-content: center;
+    @include center();
   }
 }

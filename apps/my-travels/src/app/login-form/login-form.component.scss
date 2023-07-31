@@ -1,11 +1,12 @@
+@import "function";
 :host {
-  margin: 10px;
+  margin: times8(1);
   display: block;
   background-color: rgba(0, 0, 0, 0.32);
   height: 600px;
 
   color: white;
-  padding-top: 10px;
+  padding-top: times8();
 
   h2 {
     text-align: center;

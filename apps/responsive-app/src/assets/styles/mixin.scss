@@ -1,0 +1,19 @@
+
+@mixin center(){
+  display: grid;
+  place-content: center;
+}
+
+@mixin svg-icon($path, $primary-theme) {
+  margin: auto;
+  background-color: $primary-theme;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  // -webkit-mask: url(~/assets/svg/bug_new_product.svg) no-repeat center;
+  -webkit-mask: url($path) no-repeat center;
+  mask: url($path) no-repeat center;
+}
